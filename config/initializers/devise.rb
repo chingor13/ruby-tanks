@@ -233,7 +233,7 @@ Devise.setup do |config|
   config.omniauth :github, Rails.application.secrets.github['app_id'], 
                            Rails.application.secrets.github['app_secret'],
                            scope: 'user:email',
-                           client_options: {ssl: {ca_path: "/etc/ssl/certs", verify: false}}
+                           client_options: {ssl: {ca_path: "/etc/ssl/certs"}}
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
